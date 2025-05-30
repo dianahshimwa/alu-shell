@@ -1,1 +1,1 @@
-This ia a shell Basics project
+This is a shell Basics project
