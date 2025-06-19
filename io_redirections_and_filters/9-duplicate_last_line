@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ ! -f iacta ]; then
+	echo "Error: File 'iacta' does not exist"
+
+last_line=$(tail -n 1 iacta)
+
+if [ -n "last_line" ]; then
+        echo "$last_line" >> iacta
+        echo "Last line duplicated successfully"
+else
+        echo "Warning: 'iacta' is empty. Nothing to duplicate"	
+fi
